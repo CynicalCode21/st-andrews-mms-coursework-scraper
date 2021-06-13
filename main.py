@@ -10,8 +10,11 @@ def main():
 
     driver = webdriver.Chrome(options=options)
     #driver = webdriver.Chrome('chromedriver')
+    print("Logging into mms...")
     login(driver)
+    print("Scraping years to collect grades from...")
     dates = scrape_years(driver)
+    print("Scraping grades for each CS module...")
     grades = scrape_coursework_grades(driver, dates)
 
     pprint.pprint(grades)
