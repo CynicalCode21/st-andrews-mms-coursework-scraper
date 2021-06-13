@@ -82,7 +82,8 @@ def scrape_page(driver):
     links = []
     for link in link_elements:
         # if a cs module then go to page and scrape it
-        if re.search(r"CS\d{4} Coursework", link.text):
+        if (re.search(r"CS\d{4} Coursework$", link.text) or
+            re.search(r"CS\d{4} Coursework Practicals", link.text)):
             links.append(link.get_attribute("href"))
 
     modules = {}
