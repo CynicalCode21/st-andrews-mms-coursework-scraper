@@ -11,6 +11,7 @@ def main():
     options.add_argument('window-size=1200x600')
 
     driver = webdriver.Chrome(options=options)
+    driver.implicitly_wait(3)
     #driver = webdriver.Chrome('chromedriver')
     print("Logging into mms...")
     login(driver)
