@@ -20,8 +20,5 @@ Install the dependencies
 Download and add chromedriver to your PATH
 `https://chromedriver.storage.googleapis.com/index.html?path=92.0.4515.43/`
 
-Linux:
-`export PATH=/path/to/repo:$PATH`
-
 Run the program
 `python3 main.py`
