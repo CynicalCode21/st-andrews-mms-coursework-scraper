@@ -38,7 +38,8 @@ def login(driver):
 
 def scrape_years(driver):
     # open menu
-    dropdown = driver.find_element_by_id('select2-chosen-2')
+    #dropdown = driver.find_element_by_id('select2-chosen-2')
+    dropdown = driver.find_element_by_class_name('select2-arrow')
     dropdown.click()
 
     # collect the years of page to scrape
