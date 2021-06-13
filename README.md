@@ -17,7 +17,8 @@ source venv/bin/activate
 Install the dependencies
 `pip3 install -r requirements.txt`
 
-Add `chromedriver` to your PATH (located in src directory)
+Download and add chromedriver to your PATH
+`https://chromedriver.storage.googleapis.com/index.html?path=92.0.4515.43/`
 
 Linux:
 `export PATH=/path/to/repo:$PATH`
