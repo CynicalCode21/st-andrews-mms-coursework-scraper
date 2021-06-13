@@ -17,5 +17,10 @@ source venv/bin/activate
 Install the dependencies
 `pip3 install -r requirements.txt`
 
+Add `chromedriver` to your PATH (located in src directory)
+
+Linux:
+`export PATH=/path/to/repo:$PATH`
+
 Run the program
 `python3 main.py`
